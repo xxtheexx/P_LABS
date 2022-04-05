@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <!--
+    <link rel="script" href="validacao.js">
+    -->
+    
+</head>
+<body>
+
+    <form>
+        <h1>login</h1>
+        
+        <input type="text" placeholder="login" id="login">
+        <input type="text" placeholder="senha" id="senha">
+        <input type="submit" onclick="logar(); return false"><br>
+
+        <a href="">cadastre-se</a>
+    </form>
+
+    <script>
+        function logar(){
+
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin"&& senha == "admin"){
+            alert("sucesso");
+            location.href ="inicio.html";
+            }  
+            else{
+                alert('usuario ou senha incorretos');
+            }
+            }
+    </script>
+    
+
+    
+</body>
+</html>
